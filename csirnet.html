@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>CSIR-UGC NET Physical Sciences Syllabus</title>
+    <style>
+        :root {
+            --bg-color: #f6f6f6;
+            --content-bg: #ffffff;
+            --text-color: #202122;
+            --link-color: #0645ad;
+            --border-color: #a2a9b1;
+            --toc-bg: #f8f9fa;
+            --heading-border: #a2a9b1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #101010;
+                --content-bg: #1e1e1e;
+                --text-color: #eaecf0;
+                --link-color: #6bb3ff;
+                --border-color: #444444;
+                --toc-bg: #2b2b2b;
+                --heading-border: #444444;
+            }
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Layout */
+        .sidebar {
+            width: 280px;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            margin-left: 280px; /* Width of sidebar */
+            flex: 1;
+            padding: 30px 40px;
+            max-width: 900px; /* Readable line length */
+            background-color: var(--content-bg);
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Typography & Elements */
+        h1 {
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            border-bottom: 1px solid var(--heading-border);
+            padding-bottom: 8px;
+            font-size: 1.8em;
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            border-bottom: 1px solid var(--heading-border);
+            padding-bottom: 4px;
+            font-size: 1.5em;
+            margin-top: 1.5em;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.15em;
+            margin-top: 1em;
+            margin-bottom: 6px;
+        }
+
+        p {
+            margin: 0.5em 0 1em 0;
+            text-align: justify;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* TOC Styling */
+        .toc-container {
+            background-color: var(--toc-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            font-size: 0.9em;
+        }
+
+        .toc-title {
+            margin: 0 0 10px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin: 4px 0;
+        }
+
+        .toc ul ul {
+            padding-left: 15px;
+            margin-top: 4px;
+            font-size: 0.95em;
+        }
+
+        .edit-link {
+            font-size: 0.75em;
+            margin-left: 8px;
+            color: #72777d;
+            font-weight: normal;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 15px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Sidebar: Table of Contents -->
+    <aside class="sidebar">
+        <div class="toc-container">
+            <div class="toc-title">Contents</div>
+            <div class="toc">
+                <ul>
+                    <li><a href="#part-a">PART ‘A’ CORE</a>
+                        <ul>
+                            <li><a href="#ma">I. Mathematical Methods</a></li>
+                            <li><a href="#cm">II. Classical Mechanics</a></li>
+                            <li><a href="#em">III. Electromagnetic Theory</a></li>
+                            <li><a href="#qm">IV. Quantum Mechanics</a></li>
+                            <li><a href="#ts">V. Thermo & Stat Physics</a></li>
+                            <li><a href="#ee">VI. Electronics & Exp. Methods</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#part-b">PART ‘B’ ADVANCED</a>
+                        <ul>
+                            <li><a href="#ma-b">I. Mathematical Methods</a></li>
+                            <li><a href="#cm-b">II. Classical Mechanics</a></li>
+                            <li><a href="#em-b">III. Electromagnetic Theory</a></li>
+                            <li><a href="#qm-b">IV. Quantum Mechanics</a></li>
+                            <li><a href="#ts-b">V. Thermo & Stat Physics</a></li>
+                            <li><a href="#ee-b">VI. Electronics & Exp. Methods</a></li>
+                            <li><a href="#am">VII. Atomic & Molecular</a></li>
+                            <li><a href="#cmp">VIII. Condensed Matter</a></li>
+                            <li><a href="#npp">IX. Nuclear & Particle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Right Side: Main Content -->
+    <main class="main-content">
+        <h1>CSIR-UGC NET Physical Sciences Syllabus</h1>
+
+        <h2 id="part-a">PART ‘A’ CORE<span class="edit-link">[<a href="#">edit</a>]</span></h2>
+        
+        <h3 id="ma">I. Mathematical Methods of Physics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Dimensional_analysis" target="_blank">Dimensional analysis</a>. <a href="https://en.wikipedia.org/wiki/Vector_algebra" target="_blank">Vector algebra</a> and <a href="https://en.wikipedia.org/wiki/Vector_calculus" target="_blank">vector calculus</a>. <a href="https://en.wikipedia.org/wiki/Linear_algebra" target="_blank">Linear algebra</a>, <a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)" target="_blank">matrices</a>, <a href="https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem" target="_blank">Cayley-Hamilton Theorem</a>. <a href="https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors" target="_blank">Eigenvalues and eigenvectors</a>. <a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation" target="_blank">Linear ordinary differential equations</a> of first & second order, Special functions(<a href="https://en.wikipedia.org/wiki/Hermite_polynomials" target="_blank">Hermite</a>, <a href="https://en.wikipedia.org/wiki/Bessel_function" target="_blank">Bessel</a>, <a href="https://en.wikipedia.org/wiki/Laguerre_polynomials" target="_blank">Laguerre</a> and <a href="https://en.wikipedia.org/wiki/Legendre_polynomials" target="_blank">Legendre functions</a>). <a href="https://en.wikipedia.org/wiki/Fourier_series" target="_blank">Fourier series</a>, <a href="https://en.wikipedia.org/wiki/Fourier_transform" target="_blank">Fourier</a> and <a href="https://en.wikipedia.org/wiki/Laplace_transform" target="_blank">Laplace transforms</a>. Elements of <a href="https://en.wikipedia.org/wiki/Complex_analysis" target="_blank">complex analysis</a>, <a href="https://en.wikipedia.org/wiki/Analytic_function" target="_blank">analytic functions</a>; <a href="https://en.wikipedia.org/wiki/Taylor_series" target="_blank">Taylor</a> & <a href="https://en.wikipedia.org/wiki/Laurent_series" target="_blank">Laurent series</a>; <a href="https://en.wikipedia.org/wiki/Zeros_and_poles" target="_blank">poles</a>, <a href="https://en.wikipedia.org/wiki/Residue_(complex_analysis)" target="_blank">residues</a> and evaluation of integrals. Elementary <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank">probability theory</a>, <a href="https://en.wikipedia.org/wiki/Random_variable" target="_blank">random variables</a>, <a href="https://en.wikipedia.org/wiki/Binomial_distribution" target="_blank">binomial</a>, <a href="https://en.wikipedia.org/wiki/Poisson_distribution" target="_blank">Poisson</a> and <a href="https://en.wikipedia.org/wiki/Normal_distribution" target="_blank">normal distributions</a>. <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank">Central limit theorem</a>.</p>
+
+        <h3 id="cm">II. Classical Mechanics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion" target="_blank">Newton’s laws</a>. <a href="https://en.wikipedia.org/wiki/Dynamical_system" target="_blank">Dynamical systems</a>, <a href="https://en.wikipedia.org/wiki/Phase_space" target="_blank">Phase space dynamics</a>, <a href="https://en.wikipedia.org/wiki/Stability_theory" target="_blank">stability analysis</a>. <a href="https://en.wikipedia.org/wiki/Central_force" target="_blank">Central force</a> motions. Two body Collisions- <a href="https://en.wikipedia.org/wiki/Scattering" target="_blank">scattering</a> in laboratory and <a href="https://en.wikipedia.org/wiki/Center_of_mass" target="_blank">Centre of mass frames</a>. <a href="https://en.wikipedia.org/wiki/Rigid_body_dynamics" target="_blank">Rigid body dynamics</a>-<a href="https://en.wikipedia.org/wiki/Moment_of_inertia" target="_blank">moment of inertia tensor</a>. Non-inertial frames and <a href="https://en.wikipedia.org/wiki/Fictitious_force" target="_blank">pseudoforces</a>. <a href="https://en.wikipedia.org/wiki/Variational_principle" target="_blank">Variational principle</a>. <a href="https://en.wikipedia.org/wiki/Generalized_coordinates" target="_blank">Generalized coordinates</a>. <a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics" target="_blank">Lagrangian</a> and <a href="https://en.wikipedia.org/wiki/Hamiltonian_mechanics" target="_blank">Hamiltonian formalism</a> and equations of motion. <a href="https://en.wikipedia.org/wiki/Conservation_law" target="_blank">Conservation laws</a> and <a href="https://en.wikipedia.org/wiki/Ignorable_coordinate" target="_blank">cyclic coordinates</a>. Periodic motion: <a href="https://en.wikipedia.org/wiki/Small_oscillations" target="_blank">small oscillations</a>, <a href="https://en.wikipedia.org/wiki/Normal_mode" target="_blank">normal modes</a>. <a href="https://en.wikipedia.org/wiki/Special_relativity" target="_blank">Special theory of relativity</a>-<a href="https://en.wikipedia.org/wiki/Lorentz_transformation" target="_blank">Lorentz transformations</a>, <a href="https://en.wikipedia.org/wiki/Relativistic_mechanics" target="_blank">relativistic kinematics</a> and <a href="https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence" target="_blank">mass–energy equivalence</a>.</p>
+
+        <h3 id="em">III. Electromagnetic Theory</h3>
+        <p>Electrostatics: <a href="https://en.wikipedia.org/wiki/Gauss%27s_law" target="_blank">Gauss’s law</a> and its applications, <a href="https://en.wikipedia.org/wiki/Laplace%27s_equation" target="_blank">Laplace</a> and <a href="https://en.wikipedia.org/wiki/Poisson%27s_equation" target="_blank">Poisson equations</a>, <a href="https://en.wikipedia.org/wiki/Boundary_value_problem" target="_blank">boundary value problems</a>. Magnetostatics: <a href="https://en.wikipedia.org/wiki/Biot%E2%80%93Savart_law" target="_blank">Biot-Savart law</a>, <a href="https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law" target="_blank">Ampere's theorem</a>. <a href="https://en.wikipedia.org/wiki/Electromagnetic_induction" target="_blank">Electromagnetic induction</a>. <a href="https://en.wikipedia.org/wiki/Maxwell%27s_equations" target="_blank">Maxwell's equations</a> in free space and linear isotropic media; boundary conditions on the fields at interfaces. <a href="https://en.wikipedia.org/wiki/Scalar_potential" target="_blank">Scalar</a> and <a href="https://en.wikipedia.org/wiki/Vector_potential" target="_blank">vector potentials</a>, <a href="https://en.wikipedia.org/wiki/Gauge_invariance" target="_blank">gauge invariance</a>. <a href="https://en.wikipedia.org/wiki/Electromagnetic_radiation" target="_blank">Electromagnetic waves</a> in free space. <a href="https://en.wikipedia.org/wiki/Dielectric" target="_blank">Dielectrics</a> and <a href="https://en.wikipedia.org/wiki/Electrical_conductor" target="_blank">conductors</a>. <a href="https://en.wikipedia.org/wiki/Reflection_(physics)" target="_blank">Reflection and refraction</a>, <a href="https://en.wikipedia.org/wiki/Polarization_(waves)" target="_blank">polarization</a>, <a href="https://en.wikipedia.org/wiki/Fresnel_equations" target="_blank">Fresnel’s law</a>, <a href="https://en.wikipedia.org/wiki/Wave_interference" target="_blank">interference</a>, <a href="https://en.wikipedia.org/wiki/Coherence_(physics)" target="_blank">coherence</a>, and <a href="https://en.wikipedia.org/wiki/Diffraction" target="_blank">diffraction</a>. Dynamics of charged particles in static and uniform electromagnetic fields.</p>
+
+        <h3 id="qm">IV. Quantum Mechanics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality" target="_blank">Wave-particle duality</a>. <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation" target="_blank">Schrödinger equation</a>(time-dependent and time-independent). Eigenvalue problems(<a href="https://en.wikipedia.org/wiki/Particle_in_a_box" target="_blank">particle in a box</a>, <a href="https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator" target="_blank">harmonic oscillator</a>, etc.). <a href="https://en.wikipedia.org/wiki/Quantum_tunnelling" target="_blank">Tunneling</a> through a barrier. <a href="https://en.wikipedia.org/wiki/Wave_function" target="_blank">Wave-function</a> in coordinate and momentum representations. <a href="https://en.wikipedia.org/wiki/Commutator" target="_blank">Commutators</a> and <a href="https://en.wikipedia.org/wiki/Uncertainty_principle" target="_blank">Heisenberg uncertainty principle</a>. <a href="https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation" target="_blank">Dirac notation</a> for state vectors. Motion in a central potential: <a href="https://en.wikipedia.org/wiki/Angular_momentum" target="_blank">orbital angular momentum</a>, <a href="https://en.wikipedia.org/wiki/Angular_momentum_operator" target="_blank">angular momentum algebra</a>, <a href="https://en.wikipedia.org/wiki/Spin_(physics)" target="_blank">spin</a>, <a href="https://en.wikipedia.org/wiki/Angular_momentum_operator#Addition_of_angular_momenta" target="_blank">addition of angular momenta</a>; <a href="https://en.wikipedia.org/wiki/Hydrogen_atom" target="_blank">Hydrogen atom</a>. <a href="https://en.wikipedia.org/wiki/Stern%E2%80%93Gerlach_experiment" target="_blank">Stern-Gerlach experiment</a>. <a href="https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)" target="_blank">Time-independent perturbation theory</a> and applications. <a href="https://en.wikipedia.org/wiki/Variational_method_(quantum_mechanics)" target="_blank">Variational method</a>. <a href="https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)" target="_blank">Time dependent perturbation theory</a> and <a href="https://en.wikipedia.org/wiki/Fermi%27s_golden_rule" target="_blank">Fermi's golden rule</a>, <a href="https://en.wikipedia.org/wiki/Selection_rule" target="_blank">selection rules</a>. <a href="https://en.wikipedia.org/wiki/Identical_particles" target="_blank">Identical particles</a>, <a href="https://en.wikipedia.org/wiki/Pauli_exclusion_principle" target="_blank">Pauli exclusion principle</a>, <a href="https://en.wikipedia.org/wiki/Spin%E2%80%93statistics_theorem" target="_blank">spin-statistics connection</a>.</p>
+
+        <h3 id="ts">V. Thermodynamic and Statistical Physics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Laws_of_thermodynamics" target="_blank">Laws of thermodynamics</a> and their consequences. <a href="https://en.wikipedia.org/wiki/Thermodynamic_potential" target="_blank">Thermodynamic potentials</a>, <a href="https://en.wikipedia.org/wiki/Maxwell_relations" target="_blank">Maxwell relations</a>, <a href="https://en.wikipedia.org/wiki/Chemical_potential" target="_blank">chemical potential</a>, <a href="https://en.wikipedia.org/wiki/Phase_equilibrium" target="_blank">phase equilibria</a>. <a href="https://en.wikipedia.org/wiki/Phase_space" target="_blank">Phase space</a>, micro- and macro-states(<a href="https://en.wikipedia.org/wiki/Microstate_(statistical_mechanics)" target="_blank">microstate</a> and <a href="https://en.wikipedia.org/wiki/Macrostate" target="_blank">macrostate</a>). <a href="https://en.wikipedia.org/wiki/Microcanonical_ensemble" target="_blank">Micro-canonical</a>, <a href="https://en.wikipedia.org/wiki/Canonical_ensemble" target="_blank">canonical</a> and <a href="https://en.wikipedia.org/wiki/Grand_canonical_ensemble" target="_blank">grand-canonical ensembles</a> and <a href="https://en.wikipedia.org/wiki/Partition_function_(statistical_mechanics)" target="_blank">partition functions</a>. <a href="https://en.wikipedia.org/wiki/Free_energy" target="_blank">Free energy</a> and its connection with thermodynamic quantities. <a href="https://en.wikipedia.org/wiki/Maxwell%E2%80%93Boltzmann_statistics" target="_blank">Classical</a> and <a href="https://en.wikipedia.org/wiki/Quantum_statistical_mechanics" target="_blank">quantum statistics</a>. Ideal <a href="https://en.wikipedia.org/wiki/Bose_gas" target="_blank">Bose</a> and <a href="https://en.wikipedia.org/wiki/Fermi_gas" target="_blank">Fermi gases</a>. Principle of <a href="https://en.wikipedia.org/wiki/Detailed_balance" target="_blank">detailed balance</a>. <a href="https://en.wikipedia.org/wiki/Black-body_radiation" target="_blank">Blackbody radiation</a> and <a href="https://en.wikipedia.org/wiki/Planck%27s_law" target="_blank">Planck's distribution law</a>.</p>
+
+        <h3 id="ee">VI. Electronics and Experimental Methods</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Semiconductor_device" target="_blank">Semiconductor devices</a>(<a href="https://en.wikipedia.org/wiki/Diode" target="_blank">diodes</a>, <a href="https://en.wikipedia.org/wiki/P%E2%80%93n_junction" target="_blank">junctions</a>, <a href="https://en.wikipedia.org/wiki/Transistor" target="_blank">transistors</a>, <a href="https://en.wikipedia.org/wiki/Field-effect_transistor" target="_blank">field effect devices</a>, <a href="https://en.wikipedia.org/wiki/Heterojunction" target="_blank">homo- and hetero-junction devices</a>), device structure, device characteristics, frequency dependence and applications. Opto-electronic devices(<a href="https://en.wikipedia.org/wiki/Solar_cell" target="_blank">solar cells</a>, <a href="https://en.wikipedia.org/wiki/Photodetector" target="_blank">photo-detectors</a>, <a href="https://en.wikipedia.org/wiki/Light-emitting_diode" target="_blank">LEDs</a>). <a href="https://en.wikipedia.org/wiki/Operational_amplifier" target="_blank">Operational amplifiers</a> and their applications. Digital techniques and applications(<a href="https://en.wikipedia.org/wiki/Register_(digital_electronics)" target="_blank">registers</a>, <a href="https://en.wikipedia.org/wiki/Counter_(digital)" target="_blank">counters</a>, <a href="https://en.wikipedia.org/wiki/Comparator" target="_blank">comparators</a> and similar circuits). <a href="https://en.wikipedia.org/wiki/Analog-to-digital_converter" target="_blank">A/D</a> and <a href="https://en.wikipedia.org/wiki/Digital-to-analog_converter" target="_blank">D/A converters</a>. <a href="https://en.wikipedia.org/wiki/Microprocessor" target="_blank">Microprocessor</a> and <a href="https://en.wikipedia.org/wiki/Microcontroller" target="_blank">microcontroller</a> basics. Data interpretation and analysis. <a href="https://en.wikipedia.org/wiki/Accuracy_and_precision" target="_blank">Precision</a> and accuracy. <a href="https://en.wikipedia.org/wiki/Propagation_of_uncertainty" target="_blank">Error analysis</a>, propagation of errors. <a href="https://en.wikipedia.org/wiki/Least_squares" target="_blank">Least squares fitting</a>.</p>
+
+        <h2 id="part-b">PART ‘B’ ADVANCED<span class="edit-link">[<a href="#">edit</a>]</span></h2>
+
+        <h3 id="ma-b">I. Mathematical Methods of Physics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Green%27s_function" target="_blank">Green’s function</a>. <a href="https://en.wikipedia.org/wiki/Partial_differential_equation" target="_blank">Partial differential equations</a>(<a href="https://en.wikipedia.org/wiki/Laplace%27s_equation" target="_blank">Laplace</a>, <a href="https://en.wikipedia.org/wiki/Wave_equation" target="_blank">wave</a> and <a href="https://en.wikipedia.org/wiki/Heat_equation" target="_blank">heat equations</a> in two and three dimensions). Elements of computational techniques: <a href="https://en.wikipedia.org/wiki/Root-finding_algorithm" target="_blank">root of functions</a>, <a href="https://en.wikipedia.org/wiki/Interpolation" target="_blank">interpolation</a>, <a href="https://en.wikipedia.org/wiki/Extrapolation" target="_blank">extrapolation</a>, integration by <a href="https://en.wikipedia.org/wiki/Trapezoidal_rule" target="_blank">trapezoid</a> and <a href="https://en.wikipedia.org/wiki/Simpson%27s_rule" target="_blank">Simpson’s rule</a>, Solution of first order differential equation using <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods" target="_blank">Runge-Kutta method</a>. <a href="https://en.wikipedia.org/wiki/Finite_difference_method" target="_blank">Finite difference methods</a>. <a href="https://en.wikipedia.org/wiki/Tensor" target="_blank">Tensors</a>. Introductory <a href="https://en.wikipedia.org/wiki/Group_theory" target="_blank">group theory</a>: <a href="https://en.wikipedia.org/wiki/SU(2)" target="_blank">SU(2)</a>, <a href="https://en.wikipedia.org/wiki/Orthogonal_group" target="_blank">O(3)</a>.</p>
+
+        <h3 id="cm-b">II. Classical Mechanics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Dynamical_system" target="_blank">Dynamical systems</a>, <a href="https://en.wikipedia.org/wiki/Phase_space" target="_blank">Phase space dynamics</a>, <a href="https://en.wikipedia.org/wiki/Stability_theory" target="_blank">stability analysis</a>. <a href="https://en.wikipedia.org/wiki/Poisson_bracket" target="_blank">Poisson brackets</a> and <a href="https://en.wikipedia.org/wiki/Canonical_transformation" target="_blank">canonical transformations</a>. Symmetry, invariance and <a href="https://en.wikipedia.org/wiki/Noether%27s_theorem" target="_blank">Noether’s theorem</a>. <a href="https://en.wikipedia.org/wiki/Hamilton%E2%80%93Jacobi_equation" target="_blank">Hamilton-Jacobi theory</a>.</p>
+
+        <h3 id="em-b">III. Electromagnetic Theory</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Dispersion_relation" target="_blank">Dispersion relations</a> in <a href="https://en.wikipedia.org/wiki/Plasma_(physics)" target="_blank">plasma</a>. <a href="https://en.wikipedia.org/wiki/Lorentz_invariance" target="_blank">Lorentz invariance</a> of Maxwell’s equation. <a href="https://en.wikipedia.org/wiki/Transmission_line" target="_blank">Transmission lines</a> and <a href="https://en.wikipedia.org/wiki/Waveguide" target="_blank">wave guides</a>. <a href="https://en.wikipedia.org/wiki/Radiation" target="_blank">Radiation</a>- from moving charges and dipoles and <a href="https://en.wikipedia.org/wiki/Retarded_potential" target="_blank">retarded potentials</a>.</p>
+
+        <h3 id="qm-b">IV. Quantum Mechanics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Spin%E2%80%93orbit_interaction" target="_blank">Spin-orbit coupling</a>, <a href="https://en.wikipedia.org/wiki/Fine_structure" target="_blank">fine structure</a>. <a href="https://en.wikipedia.org/wiki/WKB_approximation" target="_blank">WKB approximation</a>. Elementary theory of <a href="https://en.wikipedia.org/wiki/Scattering_theory" target="_blank">scattering</a>: <a href="https://en.wikipedia.org/wiki/Phase_shift_(scattering)" target="_blank">phase shifts</a>, <a href="https://en.wikipedia.org/wiki/Partial_wave_analysis" target="_blank">partial waves</a>, <a href="https://en.wikipedia.org/wiki/Born_approximation" target="_blank">Born approximation</a>. <a href="https://en.wikipedia.org/wiki/Relativistic_quantum_mechanics" target="_blank">Relativistic quantum mechanics</a>: <a href="https://en.wikipedia.org/wiki/Klein%E2%80%93Gordon_equation" target="_blank">Klein-Gordon</a> and <a href="https://en.wikipedia.org/wiki/Dirac_equation" target="_blank">Dirac equations</a>. Semi-classical theory of <a href="https://en.wikipedia.org/wiki/Semiclassical_physics" target="_blank">radiation</a>.</p>
+
+        <h3 id="ts-b">V. Thermodynamic and Statistical Physics</h3>
+        <p>First- and second-order <a href="https://en.wikipedia.org/wiki/Phase_transition" target="_blank">phase transitions</a>. <a href="https://en.wikipedia.org/wiki/Diamagnetism" target="_blank">Diamagnetism</a>, <a href="https://en.wikipedia.org/wiki/Paramagnetism" target="_blank">paramagnetism</a>, and <a href="https://en.wikipedia.org/wiki/Ferromagnetism" target="_blank">ferromagnetism</a>. <a href="https://en.wikipedia.org/wiki/Ising_model" target="_blank">Ising model</a>. <a href="https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate" target="_blank">Bose-Einstein condensation</a>. <a href="https://en.wikipedia.org/wiki/Diffusion_equation" target="_blank">Diffusion equation</a>. <a href="https://en.wikipedia.org/wiki/Random_walk" target="_blank">Random walk</a> and <a href="https://en.wikipedia.org/wiki/Brownian_motion" target="_blank">Brownian motion</a>. Introduction to <a href="https://en.wikipedia.org/wiki/Non-equilibrium_thermodynamics" target="_blank">nonequilibrium processes</a>.</p>
+
+        <h3 id="ee-b">VI. Electronics and Experimental Methods</h3>
+        <p>Linear and nonlinear <a href="https://en.wikipedia.org/wiki/Curve_fitting" target="_blank">curve fitting</a>, <a href="https://en.wikipedia.org/wiki/Chi-squared_test" target="_blank">chi-square test</a>. <a href="https://en.wikipedia.org/wiki/Transducer" target="_blank">Transducers</a>(temperature, pressure/vacuum, magnetic fields, vibration, optical, and particle detectors). Measurement and control. <a href="https://en.wikipedia.org/wiki/Signal_conditioning" target="_blank">Signal conditioning</a> and recovery. <a href="https://en.wikipedia.org/wiki/Impedance_matching" target="_blank">Impedance matching</a>, <a href="https://en.wikipedia.org/wiki/Amplifier" target="_blank">amplification</a>(Op-amp based, <a href="https://en.wikipedia.org/wiki/Instrumentation_amplifier" target="_blank">instrumentation amp</a>, <a href="https://en.wikipedia.org/wiki/Feedback" target="_blank">feedback</a>), <a href="https://en.wikipedia.org/wiki/Linear_filter" target="_blank">filtering</a> and <a href="https://en.wikipedia.org/wiki/Noise_reduction" target="_blank">noise reduction</a>, shielding and grounding. <a href="https://en.wikipedia.org/wiki/Fourier_transform" target="_blank">Fourier transforms</a>, <a href="https://en.wikipedia.org/wiki/Lock-in_amplifier" target="_blank">lock-in detector</a>, <a href="https://en.wikipedia.org/wiki/Boxcar_integrator" target="_blank">box-car integrator</a>, <a href="https://en.wikipedia.org/wiki/Modulation" target="_blank">modulation techniques</a>. High frequency devices(including generators and detectors).</p>
+
+        <h3 id="am">VII. Atomic & Molecular Physics</h3>
+        <p>Quantum states of an electron in an atom. <a href="https://en.wikipedia.org/wiki/Electron_spin" target="_blank">Electron spin</a>. Spectrum of <a href="https://en.wikipedia.org/wiki/Helium_spectrum" target="_blank">helium</a> and <a href="https://en.wikipedia.org/wiki/Alkali_metal" target="_blank">alkali atom</a>. Relativistic corrections for energy levels of <a href="https://en.wikipedia.org/wiki/Hydrogen_atom" target="_blank">hydrogen atom</a>, <a href="https://en.wikipedia.org/wiki/Hyperfine_structure" target="_blank">hyperfine structure</a> and <a href="https://en.wikipedia.org/wiki/Isotope_shift" target="_blank">isotopic shift</a>, width of spectrum lines, <a href="https://en.wikipedia.org/wiki/Term_symbol" target="_blank">LS & JJ couplings</a>. <a href="https://en.wikipedia.org/wiki/Zeeman_effect" target="_blank">Zeeman</a>, <a href="https://en.wikipedia.org/wiki/Paschen%E2%80%93Back_effect" target="_blank">Paschen-Bach</a> & <a href="https://en.wikipedia.org/wiki/Stark_effect" target="_blank">Stark effects</a>. <a href="https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance" target="_blank">Electron spin resonance</a>. <a href="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance" target="_blank">Nuclear magnetic resonance</a>, <a href="https://en.wikipedia.org/wiki/Chemical_shift" target="_blank">chemical shift</a>. <a href="https://en.wikipedia.org/wiki/Franck%E2%80%93Condon_principle" target="_blank">Franck-Condon principle</a>. <a href="https://en.wikipedia.org/wiki/Born%E2%80%93Oppenheimer_approximation" target="_blank">Born-Oppenheimer approximation</a>. Electronic, rotational, vibrational and <a href="https://en.wikipedia.org/wiki/Raman_spectroscopy" target="_blank">Raman spectra</a> of diatomic molecules, <a href="https://en.wikipedia.org/wiki/Selection_rule" target="_blank">selection rules</a>. <a href="https://en.wikipedia.org/wiki/Laser" target="_blank">Lasers</a>: <a href="https://en.wikipedia.org/wiki/Spontaneous_emission" target="_blank">spontaneous</a> and <a href="https://en.wikipedia.org/wiki/Stimulated_emission" target="_blank">stimulated emission</a>, <a href="https://en.wikipedia.org/wiki/Einstein_coefficients" target="_blank">Einstein A & B coefficients</a>. <a href="https://en.wikipedia.org/wiki/Optical_pumping" target="_blank">Optical pumping</a>, <a href="https://en.wikipedia.org/wiki/Population_inversion" target="_blank">population inversion</a>, rate equation. Modes of resonators and <a href="https://en.wikipedia.org/wiki/Coherence_length" target="_blank">coherence length</a>.</p>
+
+        <h3 id="cmp">VIII. Condensed Matter Physics</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Bravais_lattice" target="_blank">Bravais lattices</a>. <a href="https://en.wikipedia.org/wiki/Reciprocal_lattice" target="_blank">Reciprocal lattice</a>. <a href="https://en.wikipedia.org/wiki/Diffraction" target="_blank">Diffraction</a> and the <a href="https://en.wikipedia.org/wiki/Structure_factor" target="_blank">structure factor</a>. <a href="https://en.wikipedia.org/wiki/Chemical_bond" target="_blank">Bonding of solids</a>. Elastic properties, <a href="https://en.wikipedia.org/wiki/Phonon" target="_blank">phonons</a>, lattice specific heat. Free electron theory and electronic specific heat. Response and relaxation phenomena. <a href="https://en.wikipedia.org/wiki/Drude_model" target="_blank">Drude model</a> of electrical and thermal conductivity. <a href="https://en.wikipedia.org/wiki/Hall_effect" target="_blank">Hall effect</a> and <a href="https://en.wikipedia.org/wiki/Thermoelectric_effect" target="_blank">thermoelectric power</a>. Electron motion in a periodic potential, <a href="https://en.wikipedia.org/wiki/Electronic_band_structure" target="_blank">band theory of solids</a>: metals, insulators and semiconductors. <a href="https://en.wikipedia.org/wiki/Superconductivity" target="_blank">Superconductivity</a>: <a href="https://en.wikipedia.org/wiki/Type-I_superconductor" target="_blank">type-I</a> and <a href="https://en.wikipedia.org/wiki/Type-II_superconductor" target="_blank">type-II superconductors</a>. <a href="https://en.wikipedia.org/wiki/Josephson_effect" target="_blank">Josephson junctions</a>. <a href="https://en.wikipedia.org/wiki/Superfluidity" target="_blank">Superfluidity</a>. Defects and <a href="https://en.wikipedia.org/wiki/Dislocation" target="_blank">dislocations</a>. Ordered phases of matter: translational and orientational order, kinds of <a href="https://en.wikipedia.org/wiki/Liquid_crystal" target="_blank">liquid crystalline order</a>. <a href="https://en.wikipedia.org/wiki/Quasicrystal" target="_blank">Quasi crystals</a>.</p>
+
+        <h3 id="npp">IX. Nuclear and Particle Physics</h3>
+        <p>Basic nuclear properties: size, shape and charge distribution, <a href="https://en.wikipedia.org/wiki/Spin_(physics)" target="_blank">spin</a> and <a href="https://en.wikipedia.org/wiki/Parity_(physics)" target="_blank">parity</a>. <a href="https://en.wikipedia.org/wiki/Binding_energy" target="_blank">Binding energy</a>, <a href="https://en.wikipedia.org/wiki/Semi-empirical_mass_formula" target="_blank">semi-empirical mass formula</a>, <a href="https://en.wikipedia.org/wiki/Liquid_drop_model" target="_blank">liquid drop model</a>. Nature of the <a href="https://en.wikipedia.org/wiki/Nuclear_force" target="_blank">nuclear force</a>, form of nucleon-nucleon potential, charge-independence and charge-symmetry of nuclear forces. <a href="https://en.wikipedia.org/wiki/Deuteron" target="_blank">Deuteron</a> problem. Evidence of shell structure, <a href="https://en.wikipedia.org/wiki/Nuclear_shell_model" target="_blank">single-particle shell model</a>, its validity and limitations. <a href="https://en.wikipedia.org/wiki/Rotational_spectroscopy" target="_blank">Rotational spectra</a>. Elementary ideas of <a href="https://en.wikipedia.org/wiki/Alpha_decay" target="_blank">alpha</a>, <a href="https://en.wikipedia.org/wiki/Beta_decay" target="_blank">beta</a> and <a href="https://en.wikipedia.org/wiki/Gamma_decay" target="_blank">gamma decays</a> and their <a href="https://en.wikipedia.org/wiki/Selection_rule" target="_blank">selection rules</a>. <a href="https://en.wikipedia.org/wiki/Nuclear_fission" target="_blank">Fission</a> and <a href="https://en.wikipedia.org/wiki/Nuclear_fusion" target="_blank">fusion</a>. <a href="https://en.wikipedia.org/wiki/Nuclear_reaction" target="_blank">Nuclear reactions</a>, reaction mechanism, <a href="https://en.wikipedia.org/wiki/Compound_nucleus" target="_blank">compound nuclei</a> and direct reactions. Classification of <a href="https://en.wikipedia.org/wiki/Fundamental_interaction" target="_blank">fundamental forces</a>. <a href="https://en.wikipedia.org/wiki/Elementary_particle" target="_blank">Elementary particles</a> and their <a href="https://en.wikipedia.org/wiki/Quantum_number" target="_blank">quantum numbers</a>(charge, spin, parity, <a href="https://en.wikipedia.org/wiki/Isospin" target="_blank">isospin</a>, <a href="https://en.wikipedia.org/wiki/Strangeness" target="_blank">strangeness</a>, etc.). <a href="https://en.wikipedia.org/wiki/Gell-Mann%E2%80%93Nishijima_formula" target="_blank">Gellmann-Nishijima formula</a>. <a href="https://en.wikipedia.org/wiki/Quark_model" target="_blank">Quark model</a>, <a href="https://en.wikipedia.org/wiki/Baryon" target="_blank">baryons</a> and <a href="https://en.wikipedia.org/wiki/Meson" target="_blank">mesons</a>. C, P, and T <a href="https://en.wikipedia.org/wiki/CPT_symmetry" target="_blank">invariance</a>. Application of symmetry arguments to particle reactions. <a href="https://en.wikipedia.org/wiki/Parity_violation" target="_blank">Parity non-conservation</a> in weak interaction. <a href="https://en.wikipedia.org/wiki/Relativistic_mechanics" target="_blank">Relativistic kinematics</a>.</p>
+    </main>
+
+</body>
+</html>
